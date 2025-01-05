@@ -1,0 +1,6 @@
+@article{REPO151,
+    author = "Cui, Zichen Jeff and Pan, Hengkai and Iyer, Aadhithya and Haldar, Siddhant and Pinto, Lerrel",
+    journal = "arXiv preprint arXiv:2409.12192",
+    title = "{DynaMo: In-Domain Dynamics Pretraining for Visuo-Motor Control}",
+    year = "2024"
+}
