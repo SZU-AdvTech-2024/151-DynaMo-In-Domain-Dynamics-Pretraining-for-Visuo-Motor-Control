@@ -1,0 +1,26 @@
+2024-12-05 16:29:57,401 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Current SDK version is 0.18.7
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Configure stats pid to 3899823
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Loading settings from /home/jjh/.config/wandb/settings
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Loading settings from /home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo/wandb/settings
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Loading settings from environment variables: {'start_method': 'thread'}
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': 'online', '_disable_service': None}
+2024-12-05 16:29:57,402 WARNING MainThread:3899823 [wandb_setup.py:_flush():79] Could not find program at train_new.py
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program_relpath': None, 'program': 'train_new.py'}
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:_log_setup():533] Logging user logs to /home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo/wandb/run-20241205_162957-n5m4m87v/logs/debug.log
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:_log_setup():534] Logging internal logs to /home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo/wandb/run-20241205_162957-n5m4m87v/logs/debug-internal.log
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:init():619] calling init triggers
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {'subset_fraction': None, 'train_fraction': 0.95, 'batch_size': 128, 'num_workers': 15, 'window_size': 6, 'goal_conditional': None, 'goal_seq_len': 0, 'min_future_sep': 0, 'num_extra_predicted_actions': 0, 'ssl_lr': 0.0001, 'ssl_weight_decay': 0.0, 'betas': [0.9, 0.999], 'clip_grad_norm': 0.1, 'seed': 42, 'timeout_seconds': 18000, 'sync_bn': True, 'use_lr_scheduling': True, 'warmup_epochs': 5, 'num_epochs': 300, 'save_every_epochs': 1, 'eval_offline': False, 'project': 'dynamo-repro', 'experiment': 'train_your_dataset_dynamo', 'encoder': {'_target_': 'models.encoder.resnet.resnet18', 'pretrained': False, 'output_dim': 512, 'unit_norm': False}, 'projector': {'_target_': 'models.projector.inverse_dynamics.InverseDynamicsProjector', 'window_size': 6, 'input_dim': 512, 'n_layer': 6, 'n_head': 6, 'n_embd': 120, 'output_dim': 64, 'dropout': 0.0}, 'ssl': {'_target_': 'models.ssl.dynamo.DynaMoSSL', 'window_size': 6, 'feature_dim': 512, 'projection_dim': 64, 'n_layer': 6, 'n_head': 6, 'n_embd': 120, 'dropout': 0.0, 'covariance_reg_coef': 0.04, 'dynamics_loss_coef': 1.0, 'ema_beta': 0.99, 'beta_scheduling': True, 'projector_use_ema': True, 'lr': 0.0001, 'weight_decay': 0.0, 'betas': [0.9, 0.999], 'separate_single_views': True}, 'env': {'views': 1, 'workspace': {'_target_': 'workspaces.your_workspace.YourWorkspace'}, 'dataset': {'_target_': 'datasets.your_dataset.YourTrajectoryDataset', 'data_directory': 'YOUR_DATASET_PATH'}}, 'env_vars': {'dataset_root': '/PATH/TO/DATASET/ROOT', 'datasets': {'pusht': '/PATH/TO/DATASET/ROOT/pusht_dataset', 'sim_kitchen': '/PATH/TO/DATASET/ROOT/sim_kitchen_dataset', 'libero': '/PATH/TO/DATASET/ROOT/libero_dataset', 'block_push': '/PATH/TO/DATASET/ROOT/block_push_dataset', 'your_trajectory_dataset': 'YOUR_DATASET_PATH'}}, 'effective_batch_size': 128, 'save_path': '/home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo'}
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:init():669] starting backend
+2024-12-05 16:29:57,402 INFO    MainThread:3899823 [wandb_init.py:init():673] sending inform_init request
+2024-12-05 16:29:57,404 INFO    MainThread:3899823 [wandb_init.py:init():686] backend started and connected
+2024-12-05 16:29:57,411 INFO    MainThread:3899823 [wandb_init.py:init():781] updated telemetry
+2024-12-05 16:29:57,412 INFO    MainThread:3899823 [wandb_init.py:init():814] communicating run to backend with 90.0 second timeout
+2024-12-05 16:29:58,799 INFO    MainThread:3899823 [wandb_init.py:init():867] starting run threads in backend
+2024-12-05 16:29:58,987 INFO    MainThread:3899823 [wandb_run.py:_console_start():2456] atexit reg
+2024-12-05 16:29:58,988 INFO    MainThread:3899823 [wandb_run.py:_redirect():2305] redirect: wrap_raw
+2024-12-05 16:29:58,988 INFO    MainThread:3899823 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2024-12-05 16:29:58,988 INFO    MainThread:3899823 [wandb_run.py:_redirect():2395] Redirects installed.
+2024-12-05 16:29:58,991 INFO    MainThread:3899823 [wandb_init.py:init():911] run started, returning control to user process
+2024-12-06 04:36:20,844 WARNING MsgRouterThr:3899823 [router.py:message_loop():75] message_loop has been closed

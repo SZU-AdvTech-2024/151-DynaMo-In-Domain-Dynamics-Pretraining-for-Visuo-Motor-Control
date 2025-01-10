@@ -1,0 +1,142 @@
+_wandb:
+    value:
+        cli_version: 0.18.7
+        m: []
+        python_version: 3.8.17
+        t:
+            "1":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 50
+                - 51
+                - 53
+                - 55
+                - 103
+            "2":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 50
+                - 51
+                - 53
+                - 55
+                - 103
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.8.17
+            "5": 0.18.7
+            "8":
+                - 8
+            "12": 0.18.7
+            "13": linux-x86_64
+batch_size:
+    value: 128
+betas:
+    value:
+        - 0.9
+        - 0.999
+clip_grad_norm:
+    value: 0.1
+effective_batch_size:
+    value: 128
+encoder:
+    value:
+        _target_: models.encoder.resnet.resnet18
+        output_dim: 512
+        pretrained: false
+        unit_norm: false
+env:
+    value:
+        dataset:
+            _target_: datasets.your_dataset.YourTrajectoryDataset
+            data_directory: YOUR_DATASET_PATH
+        views: 1
+        workspace:
+            _target_: workspaces.your_workspace.YourWorkspace
+env_vars:
+    value:
+        dataset_root: /PATH/TO/DATASET/ROOT
+        datasets:
+            block_push: /PATH/TO/DATASET/ROOT/block_push_dataset
+            libero: /PATH/TO/DATASET/ROOT/libero_dataset
+            pusht: /PATH/TO/DATASET/ROOT/pusht_dataset
+            sim_kitchen: /PATH/TO/DATASET/ROOT/sim_kitchen_dataset
+            your_trajectory_dataset: YOUR_DATASET_PATH
+eval_offline:
+    value: false
+experiment:
+    value: train_your_dataset_dynamo
+goal_conditional:
+    value: null
+goal_seq_len:
+    value: 0
+min_future_sep:
+    value: 0
+num_epochs:
+    value: 300
+num_extra_predicted_actions:
+    value: 0
+num_workers:
+    value: 15
+project:
+    value: dynamo-repro
+projector:
+    value:
+        _target_: models.projector.inverse_dynamics.InverseDynamicsProjector
+        dropout: 0
+        input_dim: 512
+        n_embd: 120
+        n_head: 6
+        n_layer: 6
+        output_dim: 64
+        window_size: 6
+save_every_epochs:
+    value: 1
+save_path:
+    value: /home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo
+seed:
+    value: 42
+ssl:
+    value:
+        _target_: models.ssl.dynamo.DynaMoSSL
+        beta_scheduling: true
+        betas:
+            - 0.9
+            - 0.999
+        covariance_reg_coef: 0.04
+        dropout: 0
+        dynamics_loss_coef: 1
+        ema_beta: 0.99
+        feature_dim: 512
+        lr: 0.0001
+        n_embd: 120
+        n_head: 6
+        n_layer: 6
+        projection_dim: 64
+        projector_use_ema: true
+        separate_single_views: true
+        weight_decay: 0
+        window_size: 6
+ssl_lr:
+    value: 0.0001
+ssl_weight_decay:
+    value: 0
+subset_fraction:
+    value: null
+sync_bn:
+    value: true
+timeout_seconds:
+    value: 18000
+train_fraction:
+    value: 0.95
+use_lr_scheduling:
+    value: true
+warmup_epochs:
+    value: 5
+window_size:
+    value: 6

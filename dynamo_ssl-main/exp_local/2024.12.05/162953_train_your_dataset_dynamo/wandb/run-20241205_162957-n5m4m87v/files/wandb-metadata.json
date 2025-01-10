@@ -1,0 +1,76 @@
+{
+  "os": "Linux-5.15.0-116-generic-x86_64-with-glibc2.10",
+  "python": "3.8.17",
+  "startedAt": "2024-12-05T16:29:57.405213Z",
+  "args": [
+    "--config-name=train_your_dataset"
+  ],
+  "program": "train_new.py",
+  "email": "2249899226@qq.com",
+  "root": "/home/jjh/new/latent_foundation/dynamo_ssl-main/exp_local/2024.12.05/162953_train_your_dataset_dynamo",
+  "host": "adminroot",
+  "username": "jjh",
+  "executable": "/home/jjh/miniconda3/envs/dynamo-repro/bin/python3",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA L40",
+  "gpu_count": 7,
+  "disk": {
+    "/": {
+      "total": "470353559552",
+      "used": "135565557760"
+    }
+  },
+  "memory": {
+    "total": "540644421632"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    },
+    {
+      "name": "NVIDIA L40",
+      "memoryTotal": "48305799168",
+      "cudaCores": 18176,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.4"
+}
